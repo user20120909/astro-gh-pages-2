@@ -1,6 +1,5 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection } from 'astro:content';
 import { extractSections } from '../../util/markdown';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Paragraph from '../../components/Paragraph.astro';
@@ -8,6 +7,7 @@ import TitleBlock from '../../components/TitleBlock.astro';
 
 import { parseDate } from '../../util/date';
 import { getPs } from '../../util/post';
+import Share from '../../components/Share.tsx';
 
 export const getStaticPaths = (async () => {
   const ps = await getPs();
@@ -40,6 +40,7 @@ const parsedPrevBody = extractSections(prev.body);
     pubDate={parseDate(pubDate)}
     slug={slug}
   />
+  <Share text={title} client:load />
   {
     parsedBody.map((section, index) => (
       <Paragraph
@@ -56,6 +57,7 @@ const parsedPrevBody = extractSections(prev.body);
     pubDate={parseDate(prev.pubDate)}
     slug={prev.slug}
   />
+  <Share text={prev.title} client:load />
   {
     parsedPrevBody.map((section, index) => (
       <Paragraph
