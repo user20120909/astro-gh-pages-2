@@ -1,0 +1,54 @@
+---
+interface Props {
+  currentIdx: number;
+  maxIdx: number;
+}
+
+const { currentIdx, maxIdx } = Astro.props;
+
+const numberList = [];
+
+if (maxIdx < 5) {
+  for (let i = 1; i <= maxIdx; i++) {
+    numberList.push(i);
+  }
+} else if (currentIdx < 3) {
+  for (let i = 1; i <= 5; i++) {
+    numberList.push(i);
+  }
+} else if (currentIdx > maxIdx - 2) {
+  for (let i = maxIdx - 4; i <= maxIdx; i++) {
+    numberList.push(i);
+  }
+} else {
+  for (let i = currentIdx - 2; i <= currentIdx + 2; i++) {
+    numberList.push(i);
+  }
+}
+---
+
+<nav class="w-full my-4">
+  <ul
+    class="flex w-full justify-between"
+    style="list-style: none; padding: 0; margin: 0;"
+  >
+    {
+      numberList.map((i) =>
+        currentIdx === i ? (
+          <li class="flex-1 text-center font-bold hover:bg-gray-100">{i}</li>
+        ) : (
+          <li class="flex-1 text-center">
+            <a href={`/ps/${i}`} class="block w-full h-full hover:bg-gray-100">
+              {i}
+            </a>
+          </li>
+        )
+      )
+    }
+    {
+      Array.from({ length: 5 - numberList.length }).map((_, idx) => (
+        <li class="flex-1 text-center text-gray-400">-</li>
+      ))
+    }
+  </ul>
+</nav>

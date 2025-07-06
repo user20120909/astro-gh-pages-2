@@ -1,0 +1,17 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostList from '../../components/PostList.astro';
+import PostNavBar from '../../components/PostNavBar.astro';
+import { getPs } from '../../util/post';
+
+export const getStaticPaths = (async ({ paginate }) =>
+  paginate(await getPs(), { pageSize: 30 })) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<BaseLayout>
+  <PostList skip={(page.currentPage - 1) * page.size} take={page.size} />
+  <PostNavBar currentIdx={page.currentPage} maxIdx={page.lastPage} />
+</BaseLayout>

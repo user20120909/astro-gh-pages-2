@@ -1,0 +1,68 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import { extractSections } from '../../util/markdown';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Paragraph from '../../components/Paragraph.astro';
+import TitleBlock from '../../components/TitleBlock.astro';
+
+import { parseDate } from '../../util/date';
+import { getPs } from '../../util/post';
+
+export const getStaticPaths = (async () => {
+  const ps = await getPs();
+  const tuples = ps.map((p, i) => ({
+    p,
+    prev: ps[(i + 1 + ps.length) % ps.length],
+  }));
+  return tuples.map(({ p, prev }) => ({
+    params: { slug: p.slug },
+    props: {
+      slug: p.slug,
+      body: p.body,
+      ...p.data,
+      prev: { slug: prev.slug, body: prev.body, ...prev.data },
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { title, image, body, pubDate, slug, prev } = Astro.props;
+
+const parsedBody = extractSections(body);
+const parsedPrevBody = extractSections(prev.body);
+---
+
+<BaseLayout title={title} image={image}>
+  <TitleBlock
+    title={title}
+    image={image}
+    author="meidenlife"
+    pubDate={parseDate(pubDate)}
+    slug={slug}
+  />
+  {
+    parsedBody.map((section, index) => (
+      <Paragraph
+        title={section.title}
+        ad={index % 4 === 0 ? 'shop' : index % 4 == 2 ? 'google' : undefined}
+        set:html={section.content}
+      />
+    ))
+  }
+  <TitleBlock
+    title={prev.title}
+    image={prev.image}
+    author="meidenlife"
+    pubDate={parseDate(prev.pubDate)}
+    slug={prev.slug}
+  />
+  {
+    parsedPrevBody.map((section, index) => (
+      <Paragraph
+        title={section.title}
+        ad={index % 4 === 0 ? 'shop' : index % 4 == 2 ? 'google' : undefined}
+        set:html={section.content}
+      />
+    ))
+  }
+</BaseLayout>

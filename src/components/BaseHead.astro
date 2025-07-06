@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const { title: maybeTitle, image } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const title = maybeTitle ?? 'meidenlife';
+const description = Astro.props.description ?? 'welkom op mij webshite!';
+---
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico" />
+  <link
+    rel="alternate icon"
+    type="image/png"
+    href="/favicon/favicon-32x32.png"
+  />
+  <title>{title ?? 'meidenlife'}</title>
+  <link rel="canonical" href={canonicalURL} />
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9716667683618813"
+    crossorigin="anonymous"
+    is:inline></script>
+
+  <!-- Primary Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content={title} />
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  {image && <meta property="og:image" content={image} />}
+</head>

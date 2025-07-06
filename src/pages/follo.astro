@@ -1,0 +1,26 @@
+---
+import Paragraph from '../components/Paragraph.astro';
+import ShopPromo from '../components/ShopPromo.astro';
+import TitleBlock from '../components/TitleBlock.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <TitleBlock
+    title="follo 👥"
+    image="https://images.pexels.com/photos/127420/pexels-photo-127420.jpeg"
+  />
+  <Paragraph>
+    dit is hoe je een grates follo kan kreige:
+    <ul class="text-lg">
+      <li>
+        koop iets in mij <a href="https://sjop.meidenlife.nl" target=" _blank"
+          >sjop 👕</a
+        >
+      </li>
+      <li>wagt tot het is bezorgt 🎁</li>
+      <li>stuur mei een dm op insta met foto 📷</li>
+    </ul>
+  </Paragraph>
+  <ShopPromo />
+</BaseLayout>

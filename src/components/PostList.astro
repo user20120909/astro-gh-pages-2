@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import Items from './Items.astro';
+
+interface Props {
+  skip?: number;
+  take?: number;
+}
+
+const { skip = 0, take = 10 } = Astro.props as Props;
+
+const ps = (await getCollection('p'))
+  .map((p) => ({
+    title: p.data.title,
+    image: p.data.image,
+    href: `/p/${p.slug}`,
+    data: p.data,
+  }))
+  .sort(
+    (a, b) =>
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  )
+  .slice(skip, skip + take);
+---
+
+<Items items={ps} />

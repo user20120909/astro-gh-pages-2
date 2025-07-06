@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import ClientScripts from '../components/ClientScripts';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.tsx';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description, image } = Astro.props;
+---
+
+<!doctype html>
+<html lang="nl" class="min-h-screen flex flex-col">
+  <BaseHead title={title} description={description} image={image} />
+  <body class="flex flex-col flex-1 min-h-screen">
+    <ClientScripts client:only="react" />
+    <Header
+      siteName="meidenlife"
+      shopUrl="https://sjop.meidenlife.nl"
+      client:load
+    />
+    <main
+      class="w-full sm:max-w-none lg:max-w-2xl mx-auto px-4 sm:px-6 lg:px-4 flex-1"
+    >
+      <article>
+        <slot />
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

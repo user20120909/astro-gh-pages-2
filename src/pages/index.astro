@@ -1,0 +1,74 @@
+---
+import Paragraph from '../components/Paragraph.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ShopPromo from '../components/ShopPromo.astro';
+import PostList from '../components/PostList.astro';
+
+import Button from '../components/Button.astro';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { FaThreads } from 'react-icons/fa6';
+---
+
+<BaseLayout>
+  <Paragraph />
+  <Paragraph title="mij sjop 👕">
+    <ShopPromo />
+    <a href="https://sjop.meidenlife.nl" target="_blank"
+      ><img class="w-full h-auto" src="/image/items.png" /></a
+    >
+    <Button text="bekeik de hele sjop" href="https://sjop.meidenlife.nl" />
+  </Paragraph>
+  <Paragraph title="niewste niews 📰">
+    <PostList skip={0} take={3} />
+    <Button text="bekeik al het niews" href="/ps/1" />
+  </Paragraph>
+  <Paragraph title="tip van de dag 💡">
+    als je iets weel kope in mij <a
+      href="https://sjop.meidenlife.nl"
+      target="_blank">sjop</a
+    >, besteil same met je vriende zodat je de verzentkoste kan dele ❤️
+  </Paragraph>
+  <Paragraph title="follo 👥">
+    keik <a href="/follo">hier</a> hoe je een follo van mei kan kreige
+  </Paragraph>
+  <Paragraph title="kontakt 💬">
+    keik <a href="/kontakt">hier</a> voor kontakt
+  </Paragraph>
+  <Paragraph title="mij sosjiaals 📱">
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/meiden.life_/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;meiden.life_
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.tiktok.com/@meidenlife"
+      target="_blank"
+    >
+      <FaTiktok />&nbsp;meidenlife
+    </a>
+    <a
+      class="flex items-center mb-4"
+      href="https://www.threads.com/@meiden.life_"
+      target="_blank"
+    >
+      <FaThreads />&nbsp;meiden.life_
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/jongenslife/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;jongenslife
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/tanjahamster/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;tanjahamster
+    </a>
+  </Paragraph>
+</BaseLayout>

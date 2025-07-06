@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+a {
+  color: var(--color-pink-400);
+}
+
+a:hover {
+  color: var(--color-pink-500);
+}
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}

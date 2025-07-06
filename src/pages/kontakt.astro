@@ -1,0 +1,57 @@
+---
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { FaThreads, FaXTwitter } from 'react-icons/fa6';
+import Paragraph from '../components/Paragraph.astro';
+import TitleBlock from '../components/TitleBlock.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  ><TitleBlock
+    title="kontakt 💬"
+    image="https://images.pexels.com/photos/207456/pexels-photo-207456.jpeg"
+  />
+  <Paragraph title="sjop kontakt 👕">
+    voor vragen over je betselling, neem kontakt op met mij <a
+      href="https://dashery.zendesk.com/hc/en-us/requests/new"
+      target="_blank">suplaaier</a
+    >
+  </Paragraph>
+  <Paragraph title="mij sosjiaals 📱">
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/meiden.life_/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;meiden.life_
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.tiktok.com/@meidenlife"
+      target="_blank"
+    >
+      <FaTiktok />&nbsp;meidenlife
+    </a>
+    <a
+      class="flex items-center mb-4"
+      href="https://www.threads.com/@meiden.life_"
+      target="_blank"
+    >
+      <FaThreads />&nbsp;meiden.life_
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/jongenslife/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;jongenslife
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/tanjahamster/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;tanjahamster
+    </a>
+  </Paragraph>
+</BaseLayout>
