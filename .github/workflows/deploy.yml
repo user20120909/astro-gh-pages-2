@@ -16,10 +16,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ${{ matrix.runner }}
-    strategy:
-      matrix:
-        runner: [self-hosted, ubuntu-latest]
+    runs-on: ubuntu-latest
     env:
       SITE_URL: ${{ vars.SITE_URL }}
       SITE_TITLE: ${{ vars.SITE_TITLE }}
@@ -32,10 +29,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ${{ matrix.runner }}
-    strategy:
-      matrix:
-        runner: [self-hosted, ubuntu-latest]
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
