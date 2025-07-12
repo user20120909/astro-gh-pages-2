@@ -1,10 +1,11 @@
 ---
 import Google from './Google.astro';
-import ShopPromo from './ShopPromo.astro';
+import Shop from './Shop';
+import shopItems from '../../public/shop-items.json';
 
 interface Props {
   title?: string;
-  ad?: 'google' | 'shop';
+  ad?: 'google' | 'shop' | 'shop-xl';
 }
 
 const { title, ad } = Astro.props;
@@ -15,6 +16,7 @@ const { title, ad } = Astro.props;
   <p class="text-xl text-gray-700 mb-4">
     <slot />
   </p>
-  {ad === 'shop' && <ShopPromo />}
+  {ad === 'shop' && <Shop items={shopItems} client:load />}
+  {ad === 'shop-xl' && <Shop items={shopItems} rows={2} client:load />}
   {ad === 'google' && <Google />}
 </section>
