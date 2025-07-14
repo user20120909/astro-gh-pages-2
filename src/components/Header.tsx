@@ -11,7 +11,7 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
 
   const pages = [
     { name: 'sjop 👕', href: shopUrl },
-    { name: 'niews 📰', href: '/ps/0' },
+    { name: 'niews 📰', href: '/ps/1' },
     { name: 'follo 👥', href: '/follo' },
     { name: 'kontakt 💬', href: '/kontakt' },
   ];
