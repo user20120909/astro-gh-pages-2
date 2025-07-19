@@ -6,7 +6,7 @@ import PostNavBar from '../../components/PostNavBar.astro';
 import { getPs } from '../../util/post';
 
 export const getStaticPaths = (async ({ paginate }) =>
-  paginate(await getPs(), { pageSize: 30 })) satisfies GetStaticPaths;
+  paginate(await getPs(), { pageSize: 15 })) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
 ---
