@@ -45,7 +45,7 @@ const parsedPrevBody = extractSections(prev.body);
     parsedBody.map((section, index) => (
       <Paragraph
         title={section.title}
-        ad={index % 4 === 0 ? 'shop' : index % 4 == 2 ? 'google' : undefined}
+        ad={index % 6 === 0 ? 'shop' : index % 6 == 3 ? 'shop-img' : undefined}
         set:html={section.content}
       />
     ))
@@ -62,7 +62,7 @@ const parsedPrevBody = extractSections(prev.body);
     parsedPrevBody.map((section, index) => (
       <Paragraph
         title={section.title}
-        ad={index % 4 === 0 ? 'shop' : index % 4 == 2 ? 'google' : undefined}
+        ad={index % 6 === 0 ? 'shop' : index % 6 == 3 ? 'shop-img' : undefined}
         set:html={section.content}
       />
     ))

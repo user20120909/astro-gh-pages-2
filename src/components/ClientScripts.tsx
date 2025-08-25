@@ -1,11 +1,5 @@
 import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    adsbygoogle: any;
-  }
-}
-
 const ClientScripts = () => {
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,12 +15,6 @@ const ClientScripts = () => {
         }${urlParams.toString()}`
       );
     }
-    try {
-      const adCount = document.querySelectorAll('.adsbygoogle').length;
-      for (let i = 0; i < adCount; i++) {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      }
-    } catch (e) {}
   }, []);
 
   useEffect(() => {

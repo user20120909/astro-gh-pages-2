@@ -1,11 +1,11 @@
 ---
-import Google from './Google.astro';
 import Shop from './Shop';
 import shopItems from '../../public/shop-items.json';
+import ShopImg from './ShopImg.astro';
 
 interface Props {
   title?: string;
-  ad?: 'google' | 'shop' | 'shop-xl';
+  ad?: 'shop-img' | 'shop' | 'shop-xl';
 }
 
 const { title, ad } = Astro.props;
@@ -18,5 +18,5 @@ const { title, ad } = Astro.props;
   </p>
   {ad === 'shop' && <Shop items={shopItems} client:load />}
   {ad === 'shop-xl' && <Shop items={shopItems} rows={2} client:load />}
-  {ad === 'google' && <Google />}
+  {ad === 'shop-img' && <ShopImg />}
 </section>
