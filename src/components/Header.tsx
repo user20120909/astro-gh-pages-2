@@ -23,7 +23,7 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
           <div className="flex items-center">
             <a href="/" className="flex items-center -m-1.5 p-1.5">
               <img
-                src="/favicon/android-chrome-192x192.png"
+                src="https://i.ibb.co/JRwdK6rj/android-chrome-192x192.png"
                 alt="Company logo"
                 className="h-10 w-auto sm:h-12"
               />
