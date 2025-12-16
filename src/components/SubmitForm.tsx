@@ -8,7 +8,7 @@ import { FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
 const InputSchema = z.object({
   body: z
     .string()
-    .min(100, { message: 'body must be at least 100 characters long' })
+    .min(200, { message: 'body must be at least 200 characters long' })
     .max(1000, { message: 'body must be at most 1000 characters long' }),
 
   title: z
@@ -81,7 +81,7 @@ export default function MyForm() {
             <textarea
               {...register('body')}
               className="w-full border-2 border-pink-500 rounded px-3 py-2"
-              placeholder="schreif hier je verhaaltje... (min 100, max 1000 teken)"
+              placeholder="schreif hier je verhaaltje... (min 200, max 1000 teken)"
               rows={10}
             />
             {errors.body && (
