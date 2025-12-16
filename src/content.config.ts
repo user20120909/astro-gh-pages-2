@@ -6,6 +6,11 @@ const p = defineCollection({
     title: z.string(),
     pubDate: z.date(),
     image: z.string().url(),
+    author: z
+      .string()
+      .nullable()
+      .optional()
+      .transform((v) => v ?? undefined),
   }),
 });
 

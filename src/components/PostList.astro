@@ -13,6 +13,7 @@ const ps = (await getCollection('p'))
   .map((p) => ({
     title: p.data.title,
     image: p.data.image,
+    author: p.data.author,
     href: `/p/${p.slug}`,
     data: p.data,
   }))

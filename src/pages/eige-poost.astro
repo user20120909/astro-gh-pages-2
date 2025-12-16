@@ -1,0 +1,14 @@
+---
+import Paragraph from '../components/Paragraph.astro';
+import SubmitForm from '../components/SubmitForm';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="maak je eige poost">
+  <Paragraph />
+  <Paragraph title="maak je eige poost 📝">
+    sgreif een leuk verhaltje en meschien komt die op mij webshite en meschien
+    ook op mij instagarm!
+  </Paragraph>
+  <SubmitForm client:load />
+</BaseLayout>

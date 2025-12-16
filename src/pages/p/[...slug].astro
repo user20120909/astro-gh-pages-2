@@ -26,17 +26,17 @@ export const getStaticPaths = (async () => {
   }));
 }) satisfies GetStaticPaths;
 
-const { title, image, body, pubDate, slug, prev } = Astro.props;
+const { title, image, body, pubDate, slug, prev, author } = Astro.props;
 
 const parsedBody = extractSections(body);
 const parsedPrevBody = extractSections(prev.body);
 ---
 
-<BaseLayout title={title} image={image}>
+<BaseLayout title={author ? `fenpoost: ${title}` : title} image={image}>
   <TitleBlock
     title={title}
     image={image}
-    author="meidenlife"
+    author={author}
     pubDate={parseDate(pubDate)}
     slug={slug}
   />
@@ -53,7 +53,7 @@ const parsedPrevBody = extractSections(prev.body);
   <TitleBlock
     title={prev.title}
     image={prev.image}
-    author="meidenlife"
+    author={prev.author}
     pubDate={parseDate(prev.pubDate)}
     slug={prev.slug}
   />
