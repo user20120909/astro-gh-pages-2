@@ -9,7 +9,7 @@ const InputSchema = z.object({
   body: z
     .string()
     .min(200, { message: 'body must be at least 200 characters long' })
-    .max(1000, { message: 'body must be at most 1000 characters long' }),
+    .max(5000, { message: 'body must be at most 5000 characters long' }),
 
   title: z
     .string()
@@ -81,7 +81,7 @@ export default function MyForm() {
             <textarea
               {...register('body')}
               className="w-full border-2 border-pink-500 rounded px-3 py-2"
-              placeholder="schreif hier je verhaaltje... (min 200, max 1000 teken)"
+              placeholder="schreif hier je verhaaltje... (min 200, max 5000 teken)"
               rows={10}
             />
             {errors.body && (
