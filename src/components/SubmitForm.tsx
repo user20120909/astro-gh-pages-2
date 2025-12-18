@@ -8,8 +8,10 @@ import { FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
 const InputSchema = z.object({
   body: z
     .string()
-    .min(200, { message: 'body must be at least 200 characters long' })
-    .max(5000, { message: 'body must be at most 5000 characters long' }),
+    .min(250, { message: 'body must be at least 250 characters long (now PH)' })
+    .max(5000, {
+      message: 'body must be at most 5000 characters long (now PH)',
+    }),
 
   title: z
     .string()
@@ -47,7 +49,12 @@ export default function MyForm() {
   });
 
   const [showImageUrl, setShowImageUrl] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [state, setState] = useState<'input' | 'submitting' | 'done'>('input');
+  const [bodyCount, setBodyCount] = useState(0);
+
+  register('body', {
+    onChange: (e) => setBodyCount(e.target.value.length),
+  });
 
   const onSubmit = (data: InputType) => {
     fetch('https://aap.gurlslife.com/upload', {
@@ -61,7 +68,7 @@ export default function MyForm() {
         if (!response.ok) {
           throw new Error();
         }
-        setIsSubmitted(true);
+        setState('done');
       })
       .catch(() => {
         alert(`Lukt niet om te verzende, probeer het later opniew meschien`);
@@ -70,7 +77,7 @@ export default function MyForm() {
 
   return (
     <>
-      {!isSubmitted ? (
+      {state !== 'done' ? (
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -81,12 +88,16 @@ export default function MyForm() {
             <textarea
               {...register('body')}
               className="w-full border-2 border-pink-500 rounded px-3 py-2"
-              placeholder="schreif hier je verhaaltje... (min 200, max 5000 teken)"
+              placeholder="schreif hier je verhaltje... (min 250, max 5000 teken)"
               rows={10}
             />
-            {errors.body && (
-              <p className="text-red-600 font-bold text-sm mb-4">
-                {errors.body.message}
+            {errors.body ? (
+              <p className="text-red-600 font-bold text-sm text-center w-full mb-2">
+                {errors.body.message?.replace('PH', `${bodyCount}`)}
+              </p>
+            ) : (
+              <p className="text-sm text-gray-600 mb-2 text-center w-full">
+                {bodyCount} / 5000
               </p>
             )}
           </div>
@@ -100,7 +111,7 @@ export default function MyForm() {
               placeholder="tietel (min 10, max 50 teken)"
             />
             {errors.title && (
-              <p className="text-red-600 font-bold text-sm mb-4">
+              <p className="text-red-600 font-bold text-sm mb-4 text-center w-full">
                 {errors.title.message}
               </p>
             )}
@@ -113,7 +124,7 @@ export default function MyForm() {
               placeholder="auteur, gebrek niet je egte naam pls (min 3, max 30 teken)"
             />
             {errors.author && (
-              <p className="text-red-600 font-bold text-sm mb-4">
+              <p className="text-red-600 font-bold text-sm mb-4 text-center w-full">
                 {errors.author.message}
               </p>
             )}
@@ -152,24 +163,26 @@ export default function MyForm() {
                 placeholder="https://images.pexels.com/photos/..."
               />
               {errors.imageUrl && (
-                <p className="text-red-600 font-bold text-sm mb-4">
+                <p className="text-red-600 font-bold text-sm mb-4 text-center w-full">
                   {errors.imageUrl.message}
                 </p>
               )}
             </div>
           )}
 
-          <button
-            type="submit"
-            className="flex justify-center mt-4 mb-8 text-xl cursor-pointer"
-          >
-            <b className="inline-flex items-center gap-1 align-middle text-pink-500 flex items-center">
-              <span className="align-middle">stuur op</span>{' '}
-              <span className="flex items-center">
-                <FaArrowRight />{' '}
-              </span>{' '}
-            </b>{' '}
-          </button>
+          {state !== 'submitting' && (
+            <button
+              type="submit"
+              className="flex justify-center mt-4 mb-8 text-xl cursor-pointer"
+            >
+              <b className="inline-flex items-center gap-1 align-middle text-pink-500 flex items-center">
+                <span className="align-middle">stuur op</span>{' '}
+                <span className="flex items-center">
+                  <FaArrowRight />{' '}
+                </span>{' '}
+              </b>{' '}
+            </button>
+          )}
         </form>
       ) : (
         <p>dankjenwel voor je in zijn ding ❤️ ik probeer zms te pooste</p>
