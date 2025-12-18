@@ -172,18 +172,22 @@ export default function MyForm() {
             </div>
           )}
 
-          {state !== 'submitting' && (
+          {state !== 'submitting' ? (
             <button
               type="submit"
               className="flex justify-center mt-4 mb-8 text-xl cursor-pointer"
             >
               <b className="inline-flex items-center gap-1 align-middle text-pink-500 flex items-center">
-                <span className="align-middle">stuur op</span>{' '}
+                <span className="align-middle">stuur op</span>
                 <span className="flex items-center">
-                  <FaArrowRight />{' '}
-                </span>{' '}
-              </b>{' '}
+                  <FaArrowRight />
+                </span>
+              </b>
             </button>
+          ) : (
+            <div className="flex mt-4 mb-8">
+              <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-pink-500"></div>
+            </div>
           )}
         </form>
       ) : (
