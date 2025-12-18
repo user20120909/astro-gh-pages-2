@@ -50,6 +50,14 @@ const parsedPrevBody = extractSections(prev.body);
       />
     ))
   }
+  {
+    author && (
+      <Paragraph title="fenpoost">
+        dezen poost was gesgreve door mij fen <b>{author}</b>. wil je ook je
+        eige fenpoost make??? dat kan <a href="/eige-poost">hier</a>!!!
+      </Paragraph>
+    )
+  }
   <TitleBlock
     title={prev.title}
     image={prev.image}
