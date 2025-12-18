@@ -73,6 +73,7 @@ export default function MyForm() {
       })
       .catch(() => {
         alert(`Lukt niet om te verzende, probeer het later opniew meschien`);
+        setState('input');
       });
   };
 
