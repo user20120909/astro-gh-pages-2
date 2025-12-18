@@ -57,6 +57,7 @@ export default function MyForm() {
   });
 
   const onSubmit = (data: InputType) => {
+    setState('submitting');
     fetch('https://aap.gurlslife.com/upload', {
       method: 'POST',
       headers: {
