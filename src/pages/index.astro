@@ -6,6 +6,7 @@ import PostList from '../components/PostList.astro';
 import Button from '../components/Button';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 import { FaThreads } from 'react-icons/fa6';
+import ListWeather from '../components/ListWeather.astro';
 ---
 
 <BaseLayout>
@@ -14,6 +15,10 @@ import { FaThreads } from 'react-icons/fa6';
   <Paragraph title="niewste niews 📰">
     <PostList skip={0} take={3} />
     <Button text="bekeik al het niews" href="/ps/1" />
+  </Paragraph>
+  <Paragraph title="kan je vandaag paart reide? 🏇⛅">
+    <ListWeather length={3} />
+    <Button text="bekeik al het weer" href="/weer" />
   </Paragraph>
   <Paragraph title="maak je eige poost 📝">
     keik <a href="/eige-poost">hier</a> hoe je je eige poost kan maake
