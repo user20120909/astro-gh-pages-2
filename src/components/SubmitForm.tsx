@@ -97,7 +97,7 @@ export default function MyForm() {
               </p>
             ) : (
               <p className="text-sm text-gray-600 mb-2 text-center w-full">
-                {bodyCount} / 5000
+                {bodyCount} / {bodyCount < 250 ? 250 : 5000}
               </p>
             )}
           </div>
