@@ -3,7 +3,7 @@
     "data": [
         {
             "city": "aalst",
-            "minTemp": 4,
+            "minTemp": 5,
             "maxTemp": 9,
             "icon": "10d",
             "desc": "wel <b>nat</b> maar mnu"
