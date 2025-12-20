@@ -35,42 +35,63 @@ export const getIcon = (img: string) => {
 ---
 
 {
-  weather.data.slice(0, length).map((item, i) => (
-    <div class="w-full">
-      <table class="w-full table-fixed">
-        <tbody class="w-full">
-          <tr class={`w-full ${i % 2 === 1 ? 'bg-gray-50' : ''} h-20`}>
-            <td class="w-1/3 px-2 py-2">
-              <b>{item.city}</b>
-            </td>
-            <td class="px-2 py-2">
-              {item.ignore ? (
-                '-'
-              ) : (
-                <div>
-                  <b>{item.maxTemp}°</b>
-                  <br />
-                  {item.minTemp}°
-                </div>
-              )}
-            </td>
-            <td class="px-2 py-2 text-center">
-              {getIcon(item.ignore ? 'destroyed' : item.icon)}
-            </td>
-            <td class="w-1/2 px-2 py-2">
-              {item.ignore ? (
-                <span>
-                  {item.city} is <b>vernietigd</b>
-                </span>
-              ) : (
-                <span set:html={item.desc} />
-              )}
-            </td>
-          </tr>
-          {i % 10 === 9 && i % 20 !== 9 && <Paragraph ad="shop-img" />}
-          {i % 20 === 9 && <Paragraph ad="shop" />}
-        </tbody>
-      </table>
-    </div>
-  ))
+  (() => {
+    const items = weather.data.slice(0, length);
+    const result = [];
+    let bgCounter = 0;
+
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+
+      result.push(
+        <div class="w-full">
+          <table class="w-full table-fixed">
+            <tbody class="w-full">
+              <tr
+                class={`w-full ${bgCounter % 2 === 0 ? 'bg-gray-50' : ''} h-20`}
+              >
+                <td class="w-1/3 px-2 py-2">
+                  <b>{item.city}</b>
+                </td>
+                <td class="px-2 py-2">
+                  {item.ignore ? (
+                    '-'
+                  ) : (
+                    <div>
+                      <b>{item.maxTemp}°</b>
+                      <br />
+                      {item.minTemp}°
+                    </div>
+                  )}
+                </td>
+                <td class="px-2 py-2 text-center">
+                  {getIcon(item.ignore ? 'destroyed' : item.icon)}
+                </td>
+                <td class="w-1/2 px-2 py-2">
+                  {item.ignore ? (
+                    <span>
+                      {item.city} is <b>vernietigd</b>
+                    </span>
+                  ) : (
+                    <span set:html={item.desc} />
+                  )}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      );
+
+      bgCounter++;
+
+      // Insert ad after every 11 items
+      if ((i + 1) % 11 === 0 && i !== items.length - 1) {
+        const adIndex = Math.floor(i / 11);
+        result.push(<Paragraph ad={adIndex % 2 === 0 ? 'shop-img' : 'shop'} />);
+        bgCounter = 0; // Reset background counter after ad
+      }
+    }
+
+    return result;
+  })()
 }

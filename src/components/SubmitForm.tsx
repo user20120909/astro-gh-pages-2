@@ -38,7 +38,7 @@ const InputSchema = z.object({
 type InputType = z.infer<typeof InputSchema>;
 
 // --- Form Component ---
-export default function MyForm() {
+const SubmitForm = () => {
   const {
     register,
     handleSubmit,
@@ -195,4 +195,6 @@ export default function MyForm() {
       )}
     </>
   );
-}
+};
+
+export default SubmitForm;

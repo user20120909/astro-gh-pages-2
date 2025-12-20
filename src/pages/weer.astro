@@ -6,6 +6,8 @@ import TitleBlock from '../components/TitleBlock.astro';
 import { parseDateInt } from '../util/date';
 
 import weather from '../../public/weather.json';
+import WeatherForm from '../components/WeatherForm';
+import Paragraph from '../components/Paragraph.astro';
 ---
 
 <BaseLayout
@@ -20,4 +22,7 @@ import weather from '../../public/weather.json';
   />
   <Share text="kan je vandaag paart reide?" optUrl="/weer" client:load />
   <ListWeather />
+  <Paragraph />
+  <Paragraph title="stat vernietege / toelvoege" />
+  <WeatherForm client:load />
 </BaseLayout>
