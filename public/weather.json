@@ -1,11 +1,11 @@
 {
-    "date": 20251223,
+    "date": 20251224,
     "data": [
         {
             "city": "aalst",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
@@ -18,156 +18,156 @@
         },
         {
             "city": "amersfoort",
-            "minTemp": 0,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "amsterdam",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": 0,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "antwerpen",
-            "minTemp": 1,
-            "maxTemp": 5,
+            "minTemp": -1,
+            "maxTemp": 2,
             "icon": "04d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "apeldoorn",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "assen",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "bergen op zoom",
-            "minTemp": 2,
-            "maxTemp": 5,
-            "icon": "04d",
-            "desc": "wel <b>koud</b> maar mnu"
+            "minTemp": 0,
+            "maxTemp": 2,
+            "icon": "02d",
+            "desc": "wel <b>wind</b> maar mnu"
         },
         {
             "city": "breda",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "brugge",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 3,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "brussel",
-            "minTemp": 0,
-            "maxTemp": 5,
+            "minTemp": -1,
+            "maxTemp": 2,
             "icon": "04d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "den bosch",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "den haag",
-            "minTemp": 2,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": 0,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "deventer",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "dordrecht",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "ede",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "eindhoven",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "enschede",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 1,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "genk",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "gent",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "groningen",
-            "minTemp": 0,
-            "maxTemp": 4,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "grote homo",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 1,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "haarlem",
-            "minTemp": 2,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": 1,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "hasselt",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "03d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
@@ -180,142 +180,142 @@
         },
         {
             "city": "hengelo",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 1,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "hilversum",
-            "minTemp": 0,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "hoorn",
-            "minTemp": 2,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": 1,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "leeuwarden",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "leiden",
-            "minTemp": 2,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": 0,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "leuven",
-            "minTemp": 0,
-            "maxTemp": 5,
+            "minTemp": -2,
+            "maxTemp": 2,
             "icon": "04d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "maaskantje",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "maastricht",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "mechelen",
-            "minTemp": 1,
-            "maxTemp": 5,
+            "minTemp": -1,
+            "maxTemp": 2,
             "icon": "04d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "nijmegen",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "oostende",
-            "minTemp": 1,
-            "maxTemp": 5,
+            "minTemp": 2,
+            "maxTemp": 4,
             "icon": "04d",
             "desc": "wel <b>wind</b> maar mnu"
         },
         {
             "city": "paramaribo",
             "minTemp": 23,
-            "maxTemp": 30,
+            "maxTemp": 27,
             "icon": "10d",
             "desc": "wel <b>warm</b> maar mnu"
         },
         {
             "city": "philipsburg",
-            "minTemp": 26,
+            "minTemp": 25,
             "maxTemp": 26,
             "icon": "10d",
             "desc": "wel <b>warm</b> maar mnu"
         },
         {
             "city": "purmerend",
-            "minTemp": 2,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": 0,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "roeselare",
-            "minTemp": 1,
-            "maxTemp": 4,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 3,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "rotterdam",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "sittard",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "tilburg",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "turnhout",
-            "minTemp": 1,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "uithoorn",
-            "minTemp": 1,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
@@ -328,44 +328,44 @@
         },
         {
             "city": "utrecht",
-            "minTemp": 0,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 4,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "venlo",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "venray",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "01d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "willemstad",
-            "minTemp": 27,
-            "maxTemp": 30,
+            "minTemp": 25,
+            "maxTemp": 27,
             "icon": "10d",
             "desc": "wel <b>warm</b> maar mnu"
         },
         {
             "city": "witte paarden",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "zeist",
-            "minTemp": 0,
-            "maxTemp": 6,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 3,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
@@ -378,16 +378,16 @@
         },
         {
             "city": "zutphen",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -2,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         },
         {
             "city": "zwolle",
-            "minTemp": 0,
-            "maxTemp": 5,
-            "icon": "04d",
+            "minTemp": -1,
+            "maxTemp": 2,
+            "icon": "02d",
             "desc": "wel <b>koud</b> maar mnu"
         }
     ]
