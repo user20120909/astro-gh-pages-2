@@ -8,6 +8,7 @@ import TitleBlock from '../../components/TitleBlock.astro';
 import { parseDate } from '../../util/date';
 import { getPs } from '../../util/post';
 import Share from '../../components/Share.tsx';
+import Button from '../../components/Button';
 
 export const getStaticPaths = (async () => {
   const ps = await getPs();
@@ -51,9 +52,9 @@ const parsedPrevBody = extractSections(prev.body);
     ))
   }
   <Paragraph title="maak je eige poost!!">
-    je kan nu ook zelf een poost make. klik <a href="/eige-poost">hier</a> om dat
-    te doe! als ik de poost leuk vint zet ik op de webshite en meschien zeilfs op
-    mij instagarm ❤️
+    je kan nu ook zelf een poost make. als ik de poost leuk vint zet ik op de
+    webshite en meschien zeilfs op mij instagarm ❤️
+    <Button text="maak je eige poost" href="/eige-poost" />
   </Paragraph>
   <TitleBlock
     title={prev.title}
@@ -73,8 +74,8 @@ const parsedPrevBody = extractSections(prev.body);
     ))
   }
   <Paragraph title="maak je eige poost!!">
-    je kan nu ook zelf een poost make. klik <a href="/eige-poost">hier</a> om dat
-    te doe! als ik de poost leuk vint zet ik op de webshite en meschien zeilfs op
-    mij instagarm ❤️
+    je kan nu ook zelf een poost make. als ik de poost leuk vint zet ik op de
+    webshite en meschien zeilfs op mij instagarm ❤️
+    <Button text="maak je eige poost" href="/eige-poost" />
   </Paragraph>
 </BaseLayout>

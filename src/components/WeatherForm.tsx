@@ -80,7 +80,7 @@ const WeatherForm = () => {
               className="flex justify-center mt-4 mb-8 text-xl cursor-pointer"
             >
               <b className="inline-flex items-center gap-1 align-middle text-pink-500 flex items-center">
-                <span className="align-middle">submit</span>
+                <span className="align-middle">stuur op</span>
                 <span className="flex items-center">
                   <FaArrowRight />
                 </span>
