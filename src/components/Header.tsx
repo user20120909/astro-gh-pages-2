@@ -75,6 +75,7 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                 {page.name}
                 {page.name.startsWith('sjop') && showNotification && (
                   <span className="absolute top-0 ml-15 mt-10 flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
                   </span>
                 )}
