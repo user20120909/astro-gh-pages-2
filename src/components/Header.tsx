@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 
 interface Props {
@@ -9,6 +9,8 @@ interface Props {
 const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const [showNotification, setShowNotification] = useState(false);
+
   const pages = [
     { name: 'sjop 👕', href: shopUrl },
     { name: 'niews 📰', href: '/ps/1' },
@@ -17,6 +19,12 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
     { name: 'follo 👥', href: '/follo' },
     { name: 'kontakt 📧', href: '/kontakt' },
   ];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowNotification(true);
+    }, 10000);
+  }, []);
 
   return (
     <>
@@ -44,7 +52,15 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
               {mobileMenuOpen ? (
                 <FaXmark className="h-7 w-7" aria-hidden="true" />
               ) : (
-                <FaBars className="h-7 w-7" aria-hidden="true" />
+                <>
+                  <FaBars className="h-7 w-7" aria-hidden="true" />
+                  {showNotification && (
+                    <span className="absolute ml-20 mr-11 mb-7 flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
+                    </span>
+                  )}
+                </>
               )}
             </button>
           </div>
@@ -57,6 +73,11 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                 target={page.href.startsWith('http') ? '_blank' : '_self'}
               >
                 {page.name}
+                {page.name.startsWith('sjop') && showNotification && (
+                  <span className="absolute top-0 ml-15 mt-10 flex h-2 w-2">
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
+                  </span>
+                )}
               </a>
             ))}
           </div>
@@ -75,6 +96,12 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                 target={page.href.startsWith('http') ? '_blank' : '_self'}
               >
                 {page.name}
+                {page.name.startsWith('sjop') && showNotification && (
+                  <span className="absolute top-0 ml-20 mt-38 flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
+                  </span>
+                )}
               </a>
             ))}
           </div>
