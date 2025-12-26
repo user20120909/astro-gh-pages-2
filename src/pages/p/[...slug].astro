@@ -50,14 +50,11 @@ const parsedPrevBody = extractSections(prev.body);
       />
     ))
   }
-  {
-    author && (
-      <Paragraph title="fenpoost">
-        dezen poost was gesgreve door mij fen <b>{author}</b>. wil je ook je
-        eige fenpoost make??? dat kan <a href="/eige-poost">hier</a>!!!
-      </Paragraph>
-    )
-  }
+  <Paragraph title="maak je eige poost!!">
+    je kan nu ook zelf een poost make. klik <a href="/eige-poost">hier</a> om dat
+    te doe! als ik de poost leuk vint zet ik op de webshite en meschien zeilfs op
+    mij instagarm ❤️
+  </Paragraph>
   <TitleBlock
     title={prev.title}
     image={prev.image}
@@ -75,4 +72,9 @@ const parsedPrevBody = extractSections(prev.body);
       />
     ))
   }
+  <Paragraph title="maak je eige poost!!">
+    je kan nu ook zelf een poost make. klik <a href="/eige-poost">hier</a> om dat
+    te doe! als ik de poost leuk vint zet ik op de webshite en meschien zeilfs op
+    mij instagarm ❤️
+  </Paragraph>
 </BaseLayout>
