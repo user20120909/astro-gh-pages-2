@@ -50,32 +50,26 @@ export const getIcon = (img: string) => {
               <tr
                 class={`w-full ${bgCounter % 2 === 0 ? 'bg-gray-50' : ''} h-20`}
               >
-                <td class="w-1/3 px-2 py-2">
-                  <b>{item.city}</b>
+                {item.ignore ? (
+                  <td class="w-full px-2 py-2">
+                    <b>💥 {item.city} is vernietegt</b>
+                  </td>
+                ) : <td class="w-auto px-2 py-2">
+                  <b>
+                    {`${getIcon(item.icon)} ${item.city}`}
+                  </b>
                 </td>
-                <td class="px-2 py-2 text-right">
-                  {item.ignore ? (
-                    ''
-                  ) : (
+                <td class="px-2 py-2 text-right w-1/6">
                     <div>
                       <b>{item.maxTemp}°</b>
                       <br />
                       {item.minTemp}°
                     </div>
-                  )}
                 </td>
-                <td class="px-2 py-2 text-center">
-                  {getIcon(item.ignore ? 'destroyed' : item.icon)}
+                <td class="w-auto px-2 py-2">
+                  <span set:html={item.desc} />
                 </td>
-                <td class="w-1/2 px-2 py-2">
-                  {item.ignore ? (
-                    <span>
-                      {item.city} is <b>vernietegt</b>
-                    </span>
-                  ) : (
-                    <span set:html={item.desc} />
-                  )}
-                </td>
+                }
               </tr>
             </tbody>
           </table>
