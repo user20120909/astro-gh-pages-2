@@ -23,7 +23,7 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowNotification(true);
-    }, 10000);
+    }, 60000);
   }, []);
 
   return (
@@ -45,7 +45,12 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
           <div className="flex lg:hidden">
             <button
               type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => {
+                setMobileMenuOpen(!mobileMenuOpen);
+                if (!mobileMenuOpen) {
+                  setShowNotification(false);
+                }
+              }}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-pink-400"
               aria-label="Toggle menu"
             >
@@ -56,7 +61,6 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                   <FaBars className="h-7 w-7" aria-hidden="true" />
                   {showNotification && (
                     <span className="absolute ml-20 mr-11 mb-7 flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
                     </span>
                   )}
@@ -75,7 +79,6 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                 {page.name}
                 {page.name.startsWith('sjop') && showNotification && (
                   <span className="absolute top-0 ml-15 mt-10 flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
                   </span>
                 )}
@@ -97,7 +100,7 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                 target={page.href.startsWith('http') ? '_blank' : '_self'}
               >
                 {page.name}
-                {page.name.startsWith('sjop') && showNotification && (
+                {page.name.startsWith('sjop') && (
                   <span className="absolute top-0 ml-20 mt-38 flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
