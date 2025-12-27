@@ -32,10 +32,6 @@
         "img": "https://images.teepublic.com/derived/production/designs/72807449_0/1740680170/i_m:bi_production_blanks_gnsdtqw1msat9ga8ec0d_1571669488,c_0_0_470x,s_630,q_90.jpg"
     },
     {
-        "url": "https://sjop.meidenlife.nl/products/72807449-konijndag-t-shirt",
-        "img": "https://images.teepublic.com/derived/production/designs/77357531_1/1752249246/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_74_470x,s_630,q_90.jpg"
-    },
-    {
         "url": "https://sjop.meidenlife.nl/products/73983410-vergeet-vandaag-genoeg-water-te-drinken-t-shirt",
         "img": "https://res.cloudinary.com/teepublic/image/private/s--xTmDUujH--/t_Resized%20Artwork/c_crop,x_10,y_10/c_fit,w_442/c_crop,g_north_west,h_626,w_470,x_-14,y_-88/g_north_west,u_upload:v1462829024:production:blanks:a59x1cgomgu5lprfjlmi,x_-409,y_-413/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1752249661/production/designs/73983410_2.jpg"
     },
@@ -46,5 +42,9 @@
     {
         "url": "https://sjop.meidenlife.nl/products/73888788-meiden-life-t-shirt",
         "img": "https://images.teepublic.com/derived/production/designs/73888788_3/1743521474/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg"
+    },
+    {
+        "url": "https://meidenlife.dashery.com/products/85573849-do-not-eat-free-candle-t-shirt",
+        "img": "https://images.teepublic.com/derived/production/designs/85573849_0/1766849719/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_55_470x,s_630,q_90.jpg"
     }
 ]
