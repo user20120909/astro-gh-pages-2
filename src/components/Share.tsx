@@ -9,7 +9,7 @@ interface Props {
 const Share: React.FC<Props> = ({ optUrl, text }) => {
   const shareWhatsapp = () => {
     const baseUrl = window.location.origin;
-    const url = optUrl ?? window.location.pathname;
+    const url = optUrl ?? window.location.pathname + window.location.search;
     const fullUrl = `${baseUrl}${url}`;
     return window.open(
       `https://wa.me/?text=${encodeURIComponent(text)}%0A${encodeURIComponent(
@@ -21,7 +21,7 @@ const Share: React.FC<Props> = ({ optUrl, text }) => {
 
   const shareTwitter = () => {
     const baseUrl = window.location.origin;
-    const url = optUrl ?? window.location.pathname;
+    const url = optUrl ?? window.location.pathname + window.location.search;
     const fullUrl = `${baseUrl}${url}`;
     return window.open(
       `https://twitter.com/intent/tweet?text=${encodeURIComponent(
@@ -33,7 +33,7 @@ const Share: React.FC<Props> = ({ optUrl, text }) => {
 
   const copyLink = () => {
     const baseUrl = window.location.origin;
-    const url = optUrl ?? window.location.pathname;
+    const url = optUrl ?? window.location.pathname + window.location.search;
     const fullUrl = `${baseUrl}${url}`;
     return navigator.clipboard.writeText(fullUrl);
   };

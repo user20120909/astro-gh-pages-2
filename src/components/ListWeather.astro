@@ -1,5 +1,6 @@
 ---
 import weather from '../../public/weather.json';
+import { getIcon } from '../util/weather';
 import Paragraph from './Paragraph.astro';
 
 interface Props {
@@ -7,31 +8,6 @@ interface Props {
 }
 
 const { length } = Astro.props;
-
-export const getIcon = (img: string) => {
-  switch (img) {
-    case '01d':
-      return '☀️';
-    case '02d':
-      return '⛅';
-    case '03d':
-      return '🌥️';
-    case '04d':
-      return '☁️';
-    case '09d':
-      return '🌧️';
-    case '10d':
-      return '🌦️';
-    case '11d':
-      return '⛈️';
-    case '13d':
-      return '❄️';
-    case '50d':
-      return '🌫️';
-    default:
-      return '💥';
-  }
-};
 ---
 
 {
@@ -44,36 +20,39 @@ export const getIcon = (img: string) => {
       const item = items[i];
 
       result.push(
-        <div class="w-full">
-          <table class="w-full table-fixed">
-            <tbody class="w-full">
-              <tr
-                class={`w-full ${bgCounter % 2 === 0 ? 'bg-gray-50' : ''} h-20`}
-              >
-                {item.ignore ? (
-                  <td class="w-full px-2 py-2">
-                    <b>💥 {item.city} is vernietegt</b>
-                  </td>
-                ) : <td class="w-auto px-2 py-2">
-                  <b>
-                    {`${getIcon(item.icon)} ${item.city}`}
-                  </b>
-                </td>
-                <td class="px-2 py-2 text-right w-1/6">
-                    <div>
-                      <b>{item.maxTemp}°</b>
-                      <br />
-                      {item.minTemp}°
-                    </div>
-                </td>
-                <td class="w-auto px-2 py-2">
-                  <span set:html={item.desc} />
-                </td>
-                }
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <a href={`/weer/detail?region=${encodeURIComponent(item.city)}`}>
+          <div class="w-full">
+            <table class="w-full table-fixed">
+              <tbody class="w-full">
+                <tr
+                  class={`w-full ${bgCounter % 2 === 0 ? 'bg-gray-50' : ''} h-20`}
+                >
+                  {item.ignore ? (
+                    <td class="w-full px-2 py-2">
+                      <b>💥 {item.city} is vernietegt</b>
+                    </td>
+                  ) : (
+                    <>
+                      <td class="w-auto px-2 py-2">
+                        <b>{`${getIcon(item.icon)} ${item.city}`}</b>
+                      </td>
+                      <td class="px-2 py-2 text-right w-1/6 text-gray-800">
+                        <div>
+                          <b>{item.maxTemp}°</b>
+                          <br />
+                          {item.minTemp}°
+                        </div>
+                      </td>
+                      <td class="w-auto px-2 py-2">
+                        <span class="text-gray-800" set:html={item.desc} />
+                      </td>
+                    </>
+                  )}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </a>
       );
 
       bgCounter++;

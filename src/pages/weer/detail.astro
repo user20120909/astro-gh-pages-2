@@ -1,0 +1,26 @@
+---
+import TitleBlock from '../../components/TitleBlock.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseDateInt } from '../../util/date';
+
+import weather from '../../../public/weather.json';
+import Share from '../../components/Share';
+import WeatherDetail from '../../components/WeatherDetail';
+
+import Paragraph from '../../components/Paragraph.astro';
+---
+
+<BaseLayout
+  title="kan je vandaag paart reide?"
+  image="https://images.pexels.com/photos/1364073/pexels-photo-1364073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+>
+  <TitleBlock
+    title="kan je vandaag paart reide? 🏇⛅"
+    image="https://images.pexels.com/photos/1364073/pexels-photo-1364073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    slug="/weer"
+    pubDate={parseDateInt(weather.date)}
+  />
+  <Share text="kan je vandaag paart reide?" client:load />
+  <WeatherDetail data={weather.data} client:only="react" />
+  <Paragraph ad="shop" />
+</BaseLayout>
