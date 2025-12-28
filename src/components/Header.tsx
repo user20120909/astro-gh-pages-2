@@ -9,8 +9,6 @@ interface Props {
 const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const [showNotification, setShowNotification] = useState(false);
-
   const pages = [
     { name: 'sjop 👕', href: shopUrl },
     { name: 'niews 📰', href: '/ps/1' },
@@ -19,12 +17,6 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
     { name: 'follo 👥', href: '/follo' },
     { name: 'kontakt 📧', href: '/kontakt' },
   ];
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowNotification(true);
-    }, 60000);
-  }, []);
 
   return (
     <>
@@ -45,12 +37,7 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
           <div className="flex lg:hidden">
             <button
               type="button"
-              onClick={() => {
-                setMobileMenuOpen(!mobileMenuOpen);
-                if (!mobileMenuOpen) {
-                  setShowNotification(false);
-                }
-              }}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-pink-400"
               aria-label="Toggle menu"
             >
@@ -59,11 +46,6 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
               ) : (
                 <>
                   <FaBars className="h-7 w-7" aria-hidden="true" />
-                  {showNotification && (
-                    <span className="absolute ml-20 mr-11 mb-7 flex h-2 w-2">
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
-                    </span>
-                  )}
                 </>
               )}
             </button>
@@ -77,11 +59,6 @@ const Header: React.FC<Props> = ({ siteName, shopUrl }) => {
                 target={page.href.startsWith('http') ? '_blank' : '_self'}
               >
                 {page.name}
-                {page.name.startsWith('sjop') && showNotification && (
-                  <span className="absolute top-0 ml-15 mt-10 flex h-2 w-2">
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-400"></span>
-                  </span>
-                )}
               </a>
             ))}
           </div>
