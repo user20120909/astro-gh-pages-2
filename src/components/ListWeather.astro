@@ -20,8 +20,8 @@ const { length } = Astro.props;
       const item = items[i];
 
       result.push(
-        <a href={`/weer/detail?region=${encodeURIComponent(item.city)}`}>
-          <div class="w-full">
+        <div class="w-full">
+          <a href={`/weer/detail?region=${encodeURIComponent(item.city)}`}>
             <table class="w-full table-fixed">
               <tbody class="w-full">
                 <tr
@@ -51,8 +51,8 @@ const { length } = Astro.props;
                 </tr>
               </tbody>
             </table>
-          </div>
-        </a>
+          </a>
+        </div>
       );
 
       bgCounter++;
