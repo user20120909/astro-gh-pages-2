@@ -1,10 +1,10 @@
 {
-    "date": 20260116,
+    "date": 20260117,
     "data": [
         {
             "city": "aalst",
             "minTemp": 7,
-            "maxTemp": 10,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
@@ -18,155 +18,155 @@
         },
         {
             "city": "amersfoort",
-            "minTemp": 7,
-            "maxTemp": 10,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 5,
+            "maxTemp": 12,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "amsterdam",
-            "minTemp": 7,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 5,
+            "maxTemp": 11,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "antwerpen",
-            "minTemp": 8,
-            "maxTemp": 10,
+            "minTemp": 7,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "apeldoorn",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 4,
+            "maxTemp": 11,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "assen",
-            "minTemp": 6,
-            "maxTemp": 10,
-            "icon": "10d",
-            "desc": "wel <b>nat</b> maar mnu"
+            "minTemp": 2,
+            "maxTemp": 11,
+            "icon": "04d",
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "bergen op zoom",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 6,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "breda",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "brugge",
-            "minTemp": 7,
-            "maxTemp": 9,
+            "minTemp": 6,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "brussel",
-            "minTemp": 8,
-            "maxTemp": 10,
+            "minTemp": 7,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "den bosch",
-            "minTemp": 7,
-            "maxTemp": 11,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "den haag",
             "minTemp": 7,
-            "maxTemp": 9,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "deventer",
-            "minTemp": 7,
-            "maxTemp": 11,
+            "minTemp": 4,
+            "maxTemp": 12,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "dordrecht",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 6,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "ede",
-            "minTemp": 7,
+            "minTemp": 4,
             "maxTemp": 11,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "eindhoven",
-            "minTemp": 8,
-            "maxTemp": 11,
+            "minTemp": 5,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "enschede",
-            "minTemp": 7,
-            "maxTemp": 11,
-            "icon": "10d",
-            "desc": "wel <b>nat</b> maar mnu"
+            "minTemp": 4,
+            "maxTemp": 12,
+            "icon": "04d",
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "genk",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 5,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "gent",
-            "minTemp": 8,
-            "maxTemp": 10,
+            "minTemp": 7,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "groningen",
-            "minTemp": 7,
+            "minTemp": 2,
             "maxTemp": 11,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "grote homo",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 4,
+            "maxTemp": 12,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "haarlem",
-            "minTemp": 7,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 6,
+            "maxTemp": 11,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "hasselt",
-            "minTemp": 8,
-            "maxTemp": 11,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
@@ -180,85 +180,85 @@
         },
         {
             "city": "hengelo",
-            "minTemp": 7,
+            "minTemp": 4,
+            "maxTemp": 12,
+            "icon": "04d",
+            "desc": "wel <b>kauwt</b> maar mnu"
+        },
+        {
+            "city": "hilversum",
+            "minTemp": 5,
+            "maxTemp": 12,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
+        },
+        {
+            "city": "hoorn",
+            "minTemp": 5,
             "maxTemp": 11,
             "icon": "10d",
             "desc": "wel <b>nat</b> maar mnu"
         },
         {
-            "city": "hilversum",
-            "minTemp": 7,
-            "maxTemp": 10,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
-        },
-        {
-            "city": "hoorn",
-            "minTemp": 6,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
-        },
-        {
             "city": "leeuwarden",
-            "minTemp": 6,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 2,
+            "maxTemp": 10,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "leiden",
-            "minTemp": 7,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 6,
+            "maxTemp": 11,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "leuven",
-            "minTemp": 8,
-            "maxTemp": 10,
+            "minTemp": 6,
+            "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "maaskantje",
-            "minTemp": 7,
-            "maxTemp": 11,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "maastricht",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 5,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "mechelen",
-            "minTemp": 8,
-            "maxTemp": 10,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
-        },
-        {
-            "city": "nijmegen",
             "minTemp": 7,
             "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
-            "city": "oostende",
-            "minTemp": 7,
-            "maxTemp": 9,
+            "city": "nijmegen",
+            "minTemp": 5,
+            "maxTemp": 12,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
+        },
+        {
+            "city": "oostende",
+            "minTemp": 6,
+            "maxTemp": 10,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "paramaribo",
             "minTemp": 23,
-            "maxTemp": 27,
+            "maxTemp": 29,
             "icon": "10d",
             "desc": "wel <b>warm</b> maar mnu"
         },
@@ -271,50 +271,50 @@
         },
         {
             "city": "purmerend",
-            "minTemp": 6,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 5,
+            "maxTemp": 11,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "roeselare",
-            "minTemp": 7,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
-        },
-        {
-            "city": "rotterdam",
-            "minTemp": 7,
-            "maxTemp": 9,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
-        },
-        {
-            "city": "sittard",
-            "minTemp": 7,
+            "minTemp": 6,
             "maxTemp": 11,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
+            "city": "rotterdam",
+            "minTemp": 6,
+            "maxTemp": 11,
+            "icon": "04d",
+            "desc": "<b>kan</b> wel denk ik"
+        },
+        {
+            "city": "sittard",
+            "minTemp": 5,
+            "maxTemp": 12,
+            "icon": "04d",
+            "desc": "wel <b>kauwt</b> maar mnu"
+        },
+        {
             "city": "tilburg",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "turnhout",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
         {
             "city": "uithoorn",
-            "minTemp": 7,
-            "maxTemp": 9,
+            "minTemp": 6,
+            "maxTemp": 12,
             "icon": "04d",
             "desc": "<b>kan</b> wel denk ik"
         },
@@ -328,45 +328,45 @@
         },
         {
             "city": "utrecht",
-            "minTemp": 7,
-            "maxTemp": 10,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 6,
+            "maxTemp": 12,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "venlo",
-            "minTemp": 7,
-            "maxTemp": 11,
+            "minTemp": 4,
+            "maxTemp": 12,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "venray",
-            "minTemp": 7,
-            "maxTemp": 11,
+            "minTemp": 4,
+            "maxTemp": 12,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "willemstad",
-            "minTemp": 27,
-            "maxTemp": 27,
-            "icon": "10d",
+            "minTemp": 26,
+            "maxTemp": 29,
+            "icon": "04d",
             "desc": "wel <b>warm</b> maar mnu"
         },
         {
             "city": "witte paarden",
-            "minTemp": 6,
-            "maxTemp": 9,
+            "minTemp": 3,
+            "maxTemp": 11,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "zeist",
-            "minTemp": 7,
-            "maxTemp": 10,
-            "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "minTemp": 5,
+            "maxTemp": 12,
+            "icon": "10d",
+            "desc": "wel <b>nat</b> maar mnu"
         },
         {
             "city": "zoetermeer",
@@ -378,17 +378,17 @@
         },
         {
             "city": "zutphen",
-            "minTemp": 7,
-            "maxTemp": 11,
+            "minTemp": 4,
+            "maxTemp": 12,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         },
         {
             "city": "zwolle",
-            "minTemp": 7,
-            "maxTemp": 10,
+            "minTemp": 4,
+            "maxTemp": 11,
             "icon": "04d",
-            "desc": "<b>kan</b> wel denk ik"
+            "desc": "wel <b>kauwt</b> maar mnu"
         }
     ]
 }
