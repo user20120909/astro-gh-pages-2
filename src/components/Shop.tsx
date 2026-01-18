@@ -22,7 +22,7 @@ const Shop: React.FC<Props> = ({ items, rows }) => {
         if (hiddenItems.length === 0) return prev;
 
         const randomHiddenIndex = Math.floor(
-          Math.random() * hiddenItems.length
+          Math.random() * hiddenItems.length,
         );
 
         const newItems = [...prev];
